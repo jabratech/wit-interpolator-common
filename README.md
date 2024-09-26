@@ -1,1 +1,1 @@
-### wit-imterpolator-common
+### wit-interpolator-common

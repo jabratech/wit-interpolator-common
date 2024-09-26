@@ -1,0 +1,7 @@
+interface handler {
+    use jabratech:common/types.{response};
+    use jabratech:interpolator-common/types.{interpolator-data, interpolator-config};
+
+    get-data: func(currency: s8, date: option<string>) -> result<list<interpolator-data>, response>;
+    get-config: func(currency: s8) -> result<interpolator-config, response>;
+}

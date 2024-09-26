@@ -1,0 +1,5 @@
+package jabratech:interpolator-common;
+
+world interpolator-entity {
+    export handler;
+}

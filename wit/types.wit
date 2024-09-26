@@ -1,0 +1,17 @@
+interface types {
+
+    record interpolator-data {
+        date: string,
+        weight: f64,
+        is-add: bool,
+        is-multiply: bool,
+        md: string,
+        cd: string
+    }
+
+    record interpolator-config {
+        initial-value: f64,
+        mean-rev: f64,
+        decay: f64
+    }
+}
