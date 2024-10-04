@@ -14,4 +14,21 @@ interface types {
         mean-rev: f64,
         decay: f64
     }
+
+    record update-interpolator-config {
+        user-email: string,
+        initial-value: f64,
+        mean-rev: f64,
+        decay: f64,
+        currency: s8,
+    }
+
+    record update-interpolator-data {
+        user-email: string,
+        currency: s8,
+        date: string,
+        weight: f64,
+        is-add: bool,
+        is-multiply: bool
+    }
 }
