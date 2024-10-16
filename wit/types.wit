@@ -6,7 +6,8 @@ interface types {
         is-add: bool,
         is-multiply: bool,
         md: string,
-        cd: string
+        cd: string,
+        adjustment: f64
     }
 
     record interpolator-config {
@@ -41,6 +42,7 @@ interface types {
         date: string,
         weight: f64,
         is-add: bool,
-        is-multiply: bool
+        is-multiply: bool,
+        adjustment: option<f64>
     }
 }
