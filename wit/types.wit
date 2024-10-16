@@ -29,11 +29,11 @@ interface types {
         decay: f64,
         currency: s8,
         saturday-weight: option<f64>,
-        multiply-saturday: option<bool>,
-        add-saturday: option<bool>,
+        multiply-saturday: bool,
+        add-saturday: bool,
         sunday-weight: option<f64>,
-        multiply-sunday: option<bool>,
-        add-sunday: option<bool>
+        multiply-sunday: bool,
+        add-sunday: bool
     }
 
     record update-interpolator-data {
