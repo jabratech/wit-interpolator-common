@@ -12,7 +12,13 @@ interface types {
     record interpolator-config {
         initial-value: f64,
         mean-rev: f64,
-        decay: f64
+        decay: f64,
+        saturday-weight: f64,
+        multiply-saturday: bool,
+        add-saturday: bool,
+        sunday-weight: f64,
+        multiply-sunday: bool,
+        add-sunday: bool
     }
 
     record update-interpolator-config {
@@ -21,6 +27,12 @@ interface types {
         mean-rev: f64,
         decay: f64,
         currency: s8,
+        saturday-weight: option<f64>,
+        multiply-saturday: option<bool>,
+        add-saturday: option<bool>,
+        sunday-weight: option<f64>,
+        multiply-sunday: option<bool>,
+        add-sunday: option<bool>
     }
 
     record update-interpolator-data {
