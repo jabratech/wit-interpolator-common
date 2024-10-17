@@ -2,6 +2,7 @@ interface types {
 
     record interpolator-data {
         date: string,
+        day-of-week: string,
         weight: f64,
         is-add: bool,
         is-multiply: bool,
