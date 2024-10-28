@@ -59,4 +59,22 @@ interface types {
         multiply-sunday: bool,
         add-sunday: bool
     }
+
+    record update-weekend-weight-request {
+        user-email: string,
+        currency: s8,
+        saturday-weight: option<f64>,
+        multiply-saturday: bool,
+        add-saturday: bool,
+        sunday-weight: option<f64>,
+        multiply-sunday: bool,
+        add-sunday: bool
+    }
+
+    record update-adjustment-request {
+        user-email: string,
+        currency: s8,
+        date: string,
+        adjustment: f64
+    }
 }
