@@ -64,6 +64,7 @@ interface types {
         user-email: string,
         currency: s8,
         date: string,
-        adjustment: f64
+        adjustment: f64,
+        is-smile: bool
     }
 }
