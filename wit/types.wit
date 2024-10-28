@@ -8,7 +8,8 @@ interface types {
         is-multiply: bool,
         md: string,
         cd: string,
-        adjustment: f64
+        adjustment: f64,
+        smile-adjustment: f64
     }
 
     record interpolator-config {
@@ -44,7 +45,8 @@ interface types {
         weight: f64,
         is-add: bool,
         is-multiply: bool,
-        adjustment: option<f64>
+        adjustment: option<f64>,
+        smile-adjustment: option<f64>
     }
 
     record update-weekend-weight-request {
